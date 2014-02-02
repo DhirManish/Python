@@ -25,10 +25,12 @@
 import sys
 
 def main(fname):
-	file = open(fname)
-	for line in file.readlines():
-		print line,
+		file = open(fname)
+		for line in file.readlines():
+			print line,
 	
 if __name__ == '__main__':
-	main(sys.argv[1])
-
+	try:
+		main(sys.argv[1])
+	except IndexError:
+		print "Usage: display.py <filename>"
