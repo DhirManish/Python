@@ -25,9 +25,9 @@
 import sys
 
 def main(fname):
-		file = open(fname)
-		for line in file.readlines():
-			print line,
+	file = open(fname)
+	for line in file.readlines():
+		print line,
 	
 if __name__ == '__main__':
 	try:
