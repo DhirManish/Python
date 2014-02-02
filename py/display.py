@@ -30,7 +30,5 @@ def main(fname):
 		print line,
 	
 if __name__ == '__main__':
-	try:
-		main(sys.argv[1])
-	except IndexError:
-		print "Usage: display.py <filename>"
+	main(sys.argv[1])
+
