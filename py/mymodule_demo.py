@@ -22,11 +22,11 @@
 #  
 #  
 
-import mymodule
+from mymodule import sayhello, __version__
 
 def main():
-	mymodule.sayhello()
-	print('Version', mymodule.__version__)
+	sayhello()
+	print('Version', __version__)
 	return 0
 
 if __name__ == '__main__':
