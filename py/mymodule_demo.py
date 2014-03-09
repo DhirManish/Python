@@ -22,11 +22,14 @@
 #  
 #  
 
-from mymodule import sayhello, __version__
+from mymodule import *
 
 def main():
 	sayhello()
-	print('Version', __version__)
+	'''
+	Cannot import __version__ because it starts with __ and becomes special attribute
+	'''
+	#print('Version', __version__)
 	return 0
 
 if __name__ == '__main__':
