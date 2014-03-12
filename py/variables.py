@@ -22,9 +22,11 @@
 #  
 #  
 
-a = 10.45 + 78j
-b = 45 + 12. 456j
+a = 10
+b = 20
 
 print a + b
 print a * b
 print a / b
+print a % b
+print a ** b
