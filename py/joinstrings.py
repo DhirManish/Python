@@ -26,11 +26,9 @@
 
 def main():
 	fruits = ['apple', 'banana', 'coconut', 'date']
-	result = ""
-	for fruit in fruits:
-		result += fruit
+	fruits = ' '.join(fruits)
 		
-	print result
+	print fruits
 	
 	return 0
 
