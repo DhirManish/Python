@@ -26,9 +26,8 @@
 
 def main():
 	fruits = ['apple', 'banana', 'coconut', 'date']
-	fruits = ' '.join(fruits)
-		
-	print fruits
+	print ', '.join(fruits[:-1]), \
+		'and ', fruits[-1]
 	
 	return 0
 
