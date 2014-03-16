@@ -27,7 +27,9 @@ import sys
 def main(number):
 	number = int(number)
 	# Without 0b, 0o, or 0x as prefix:
-	print "bin: {0:b}, oct: {0:o}, dec: {0:d}, hex: {0:x}".format(number)
+	#print "bin: {0:b}, oct: {0:o}, dec: {0:d}, hex: {0:x}".format(number)
+	# With 0b, 0o, or 0x as prefix:
+	print "bin: {0:#b}, oct: {0:#o}, dec: {0:#d}, hex: {0:#x}".format(number)
 	return 0
 
 if __name__ == '__main__':
