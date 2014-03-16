@@ -23,17 +23,19 @@
 #  
 
 def draw():
+	# '<' for left align, '^' for center align, '>' for right align
 	for i in '====':
 		print '{0:{fill}{align}5}'.format(i, fill='~', align='^'),
 	print
 
-
-def main():
+def header():
 	# '<' for left align, '^' for center align, '>' for right align
 	for i in 'dxob':
 		print '{0:{fill}{align}5}'.format(i, fill=' ', align='>'),
 	print
-	
+
+def main():	
+	header()
 	draw()
 	
 	for num in range(0, 16):
